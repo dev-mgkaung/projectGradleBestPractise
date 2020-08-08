@@ -146,7 +146,7 @@ dependencies {
 
     // Kotlin
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-    implementation 'androidx.core:core-ktx:1.3.1'
+    implementation rootProject.ext.libraries.ktx
 
     // App dependencies
     implementation rootProject.ext.libraries.appCompat
@@ -176,10 +176,10 @@ dependencies {
     // Architecture Components
     // LiveData
     implementation rootProject.ext.libraries.livedata
-    kapt rootProject.ext.libraries.livedatacompiler
+    kapt rootProject.ext.libraries.livecycle_arch_compiler
+    implementation rootProject.ext.libraries.lifecycle_arch_extension
+    kapt rootProject.ext.libraries.lifecycle_compiler
     // Room
-    implementation rootProject.ext.libraries.livedata
-    kapt rootProject.ext.libraries.livedatacompiler
     implementation rootProject.ext.libraries.room
     kapt rootProject.ext.libraries.roomcompiler
 
