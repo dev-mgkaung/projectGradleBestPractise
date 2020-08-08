@@ -6,9 +6,9 @@ apply plugin: 'me.moallemi.advanced-build-version'
 
 advancedVersioning {
     nameOptions {
-        versionMajor 1
+        versionMajor 0
         versionMinor 0
-        versionPatch 0
+        versionPatch 1
     }
     codeOptions {
         versionCodeType 'AUTO_INCREMENT_ONE_STEP'
@@ -173,11 +173,6 @@ dependencies {
     //OKHttp
     implementation rootProject.ext.libraries.okhttp
 
-    //Testing
-    testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
-
     // Architecture Components
     // LiveData
     implementation rootProject.ext.libraries.livedata
@@ -187,5 +182,26 @@ dependencies {
     kapt rootProject.ext.libraries.livedatacompiler
     implementation rootProject.ext.libraries.room
     kapt rootProject.ext.libraries.roomcompiler
+
+
+    //Testing
+    // Local Unit Tests
+    testImplementation rootProject.ext.libraries.junit
+    testImplementation rootProject.ext.libraries.junitktx
+    testImplementation rootProject.ext.libraries.corektx
+    testImplementation rootProject.ext.libraries.mockk
+    testImplementation rootProject.ext.libraries.mockito
+    testImplementation rootProject.ext.libraries.roboelectric
+
+    // Tests that require Android Device
+    androidTestImplementation rootProject.ext.libraries.junit
+    androidTestImplementation rootProject.ext.libraries.expressoCore
+    androidTestImplementation rootProject.ext.libraries.testRule
+    androidTestImplementation rootProject.ext.libraries.testRunner
+    androidTestImplementation rootProject.ext.libraries.testCore
+    androidTestImplementation rootProject.ext.libraries.testExtktx
+    androidTestImplementation rootProject.ext.libraries.expressoContrib
+    androidTestImplementation rootProject.ext.libraries.mockitoAndroid
+    androidTestImplementation rootProject.ext.libraries.testExt
 
 }
