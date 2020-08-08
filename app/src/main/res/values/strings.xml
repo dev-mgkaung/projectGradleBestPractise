@@ -1,0 +1,7 @@
+<resources>
+
+    <string name="app_name_dev">GradleSample(Dev)</string>
+    <string name="app_name_prod">GradleSample(Prod)</string>
+    <string name="app_name_uat">GradleSample(UAT)</string>
+
+</resources>
