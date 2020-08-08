@@ -1,6 +1,7 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
 apply plugin: 'me.moallemi.advanced-build-version'
 
 advancedVersioning {
@@ -150,8 +151,12 @@ dependencies {
     // App dependencies
     implementation rootProject.ext.libraries.appCompat
     implementation rootProject.ext.libraries.constraintLayout
-    implementation rootProject.ext.libraries.glide
     implementation rootProject.ext.libraries.material
+    implementation rootProject.ext.libraries.swiperefreshlayout
+
+    //Glide
+    implementation rootProject.ext.libraries.glide
+    annotationProcessor rootProject.ext.libraries.glideAnnotion
 
     //GSON
     implementation rootProject.ext.libraries.gson
@@ -161,10 +166,26 @@ dependencies {
     implementation rootProject.ext.libraries.retrofit_converter
     implementation rootProject.ext.libraries.retrofit_adpter
 
+    //RxKotlin
+    implementation rootProject.ext.libraries.rxkotlin
+    implementation rootProject.ext.libraries.rxandroid
+
+    //OKHttp
+    implementation rootProject.ext.libraries.okhttp
+
     //Testing
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 
     // Architecture Components
+    // LiveData
+    implementation rootProject.ext.libraries.livedata
+    kapt rootProject.ext.libraries.livedatacompiler
+    // Room
+    implementation rootProject.ext.libraries.livedata
+    kapt rootProject.ext.libraries.livedatacompiler
+    implementation rootProject.ext.libraries.room
+    kapt rootProject.ext.libraries.roomcompiler
+
 }
