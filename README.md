@@ -1,7 +1,7 @@
 # projectGradleBestPractise
 Configuration Product Flavors and Build Variants in Android
 
-(https://miro.medium.com/max/6560/1*PGagM2HrNGhYibE-tz7lrA.png)
+[!BelieveDeveloper](https://miro.medium.com/max/6560/1*PGagM2HrNGhYibE-tz7lrA.png)
 
 
 ## Gradle Advenced Build
