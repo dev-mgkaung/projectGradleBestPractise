@@ -16,7 +16,7 @@ advancedVersioning {
 
     outputOptions {
         renameOutput true
-        nameFormat 'PADCGradleSample-v${versionName}'
+        nameFormat 'GradleSample-v${versionName}'
     }
 }
 
