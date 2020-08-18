@@ -1,8 +1,8 @@
 # projectGradleBestPractise
 Configuration Product Flavors and Build Variants in Android
 
-[![Believe Developer.](https://miro.medium.com/max/6560/1*PGagM2HrNGhYibE-tz7lrA.png)
+[![Believe Developer.](https://miro.medium.com/max/2560/1*i-Y56eoLI1Vnje-JXAJC5g.png)
 
 
-## Gradle Advenced Build
+## Gradle Advanced Build
 ### Reference Link (https://github.com/dev-mgkaung/gradle-advanced-build-version)
